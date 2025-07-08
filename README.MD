@@ -1,26 +1,26 @@
 # LaptopShop - Spring MVC Application
 
-Một ứng dụng web quản lý cửa hàng laptop được xây dựng bằng Spring Boot và Spring MVC.
+A web application for laptop store management built with Spring Boot and Spring MVC.
 
-## Mô tả dự án
+## Project Description
 
-LaptopShop là một ứng dụng web full-stack được phát triển với Spring Boot framework, sử dụng:
-- **Spring MVC** cho xử lý web layer
-- **Spring Data JPA** cho data access layer  
-- **Spring Security** cho authentication và authorization
-- **JSP** cho view template
-- **MySQL** cho database
-- **Bootstrap** cho UI styling
+LaptopShop is a full-stack web application developed with Spring Boot framework, utilizing:
+- **Spring MVC** for web layer handling
+- **Spring Data JPA** for data access layer  
+- **Spring Security** for authentication and authorization
+- **JSP** for view templates
+- **MySQL** for database
+- **Bootstrap** for UI styling
 
-## Tính năng chính
+## Key Features
 
-- 🔐 Quản lý người dùng (User Management)
-- 📊 Dashboard quản trị
-- 🛒 Quản lý sản phẩm laptop
-- 👥 Hệ thống phân quyền
-- 📱 Responsive UI với Bootstrap
+- 🔐 User Management
+- 📊 Admin Dashboard
+- 🛒 Laptop Product Management
+- 👥 Role-based Authorization System
+- 📱 Responsive UI with Bootstrap
 
-## Công nghệ sử dụng
+## Technologies Used
 
 - **Java 17**
 - **Spring Boot 3.2.2**
@@ -32,14 +32,14 @@ LaptopShop là một ứng dụng web full-stack được phát triển với Sp
 - **Bootstrap**
 - **Maven**
 
-## Cấu trúc project
+## Project Structure
 
 ```
 src/
 ├── main/
 │   ├── java/
 │   │   └── vn/vproject/laptopshop/
-│   │       ├── config/          # Cấu hình Spring
+│   │       ├── config/          # Spring Configuration
 │   │       ├── controller/      # MVC Controllers
 │   │       ├── domain/          # Entity classes
 │   │       ├── repository/      # Data repositories
@@ -54,14 +54,14 @@ src/
     └── java/                    # Unit tests
 ```
 
-## Cài đặt và chạy
+## Installation and Setup
 
-### Yêu cầu hệ thống
-- Java 17 hoặc cao hơn
+### System Requirements
+- Java 17 or higher
 - Maven 3.6+
 - MySQL 8.0+
 
-### Hướng dẫn chạy
+### Getting Started
 
 1. **Clone repository**
    ```bash
@@ -69,25 +69,25 @@ src/
    cd Spring-MVC
    ```
 
-2. **Cấu hình database**
-   - Tạo database MySQL với tên `laptopshop`
-   - Cập nhật thông tin kết nối trong `src/main/resources/application.properties`
+2. **Database Configuration**
+   - Create a MySQL database named `laptopshop`
+   - Update connection details in `src/main/resources/application.properties`
 
-3. **Chạy ứng dụng**
+3. **Run the application**
    ```bash
-   # Sử dụng Maven wrapper
+   # Using Maven wrapper
    ./mvnw spring-boot:run
    
-   # Hoặc sử dụng Maven
+   # Or using Maven
    mvn spring-boot:run
    ```
 
-4. **Truy cập ứng dụng**
-   - Mở trình duyệt và truy cập: `http://localhost:8080`
+4. **Access the application**
+   - Open your browser and navigate to: `http://localhost:8080`
 
-## Cấu hình Database
+## Database Configuration
 
-Cập nhật file `application.properties`:
+Update the `application.properties` file:
 
 ```properties
 # Database configuration
@@ -105,25 +105,22 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ## API Endpoints
 
 ### User Management
-- `GET /` - Trang chủ
-- `GET /admin/user` - Danh sách người dùng
-- `GET /admin/user/create` - Form tạo người dùng mới
-- `POST /admin/user/create` - Xử lý tạo người dùng
-- `GET /admin/user/{id}` - Chi tiết người dùng
+- `GET /` - Home page
+- `GET /admin/user` - User list
+- `GET /admin/user/create` - Create user form
+- `POST /admin/user/create` - Process user creation
+- `GET /admin/user/{id}` - User details
 
-## Đóng góp
+## Contributing
 
-1. Fork repository
-2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Tạo Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Create a Pull Request
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Liên hệ
-
-Project Link: [https://github.com/yourusername/Spring-MVC](https://github.com/yourusername/Spring-MVC)
 
