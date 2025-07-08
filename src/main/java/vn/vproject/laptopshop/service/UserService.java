@@ -1,11 +1,11 @@
-package vn.hoidanit.laptopshop.service;
+package vn.vproject.laptopshop.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import vn.hoidanit.laptopshop.domain.User;
-import vn.hoidanit.laptopshop.repository.UserRepository;
+import vn.vproject.laptopshop.domain.User;
+import vn.vproject.laptopshop.repository.UserRepository;
 
 @Service
 public class UserService {
@@ -25,8 +25,8 @@ public class UserService {
     }
 
     public User handleSaveUser(User user) {
-        User hoidanit = this.userRepository.save(user);
-        System.out.println(hoidanit);
-        return hoidanit;
+        User vproject = this.userRepository.save(user);
+        System.out.println(vproject);
+        return vproject;
     }
 }
